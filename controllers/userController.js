@@ -76,9 +76,9 @@ const forgotPassword = async (req, res) => {
         await user.save({validateBeforeSave: false});
 
         // Send it to user's email
-        const resetURL = `${req.protocol}://${req.get(
-            'host'
-            )}/api/user/reset_password/${resetToken}`;
+        // const resetURL = `${req.protocol}://${req.get(
+        //     'host'
+        //     )}/api/user/reset_password/${resetToken}`;
 
         res.status(200).json({
             status: "success",
@@ -87,8 +87,10 @@ const forgotPassword = async (req, res) => {
         })
 
 
-        await new Email(user, resetURL).sendPasswordReset();
-        
+        // await new Email(user, resetURL).sendPasswordReset();
+        await new Email(user, resetToken).sendPasswordReset();
+
+
     } catch (error) {
         if (user) {
             user.passwordResetToken = undefined;
