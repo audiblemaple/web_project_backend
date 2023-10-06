@@ -29,8 +29,8 @@ Please refer to the official documentation of each dependency for more detailed 
 
 ## Contributors
 
-- [Lior Jigalo](https://github.com/audiblemaple)
 - [Gilad Segal](https://github.com/giladsegal10)
+- [Lior Jigalo](https://github.com/audiblemaple)
 
 ## Links
 **API Documentation:** TODO...
