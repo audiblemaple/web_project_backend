@@ -1,30 +1,14 @@
-# Web-Course-Backend
+# SolidClock Backend
 
-Welcome to the project!
+This is the backend server for the [SolidClock Website](https://solid-clock.onrender.com), written in Node.js. It powers the core functionalities, enabling the management and monitoring of employee clock-in times, user authentication, email operations, and more.
 
-## Installation
+## Features
 
-To get started, follow these steps:
-
-1. Clone the repository:
-   ```
-   git clone https://github.com/your-username/project.git
-   ```
-
-2. Navigate to the project directory:
-   ```
-   cd project
-   ```
-
-3. Install dependencies using npm:
-   ```
-   npm install
-   ```
-
-4. Press to start:
-   ```
-   npm run dev
-   ```
+- **User Authentication**: Handles sign up, login, and password reset operations.
+- **Data Management**: Manages employee clock-in times, attendance logs, and monthly report data.
+- **Email Operations**: Can send emails for various purposes, such as password reset instructions or notifications.
+- **Password Management**: Provides features to reset or change user passwords.
+- **API Endpoints**: Exposes various API endpoints for the frontend to interact with the backend services.
 
 ## Dependencies
 
@@ -42,3 +26,23 @@ The project relies on the following dependencies:
 - **validator** (version 13.9.0): Library for validating and sanitizing user input.
 
 Please refer to the official documentation of each dependency for more detailed information on how to use them within the project.
+
+## Contributors
+
+- [Lior Jigalo](https://github.com/audiblemaple)
+- [Gilad Segal](https://github.com/giladsegal10)
+
+## Links
+**API Documentation:** TODO...
+
+Feel free to open an issue or send a pull request if you have suggestions, improvements, or security concerns. We appreciate all the feedback!
+
+## TODO
+- Add automatic shift cancelation for all users at midnight in case they forgot to end shift.
+- Add functionality to edit shift times.
+- Improve email templates for better user experience.
+- Add more comprehensive logging and error handling.
+- Optimize database queries for faster response times.
+
+
+(Note: Adjust TODOs as needed)
